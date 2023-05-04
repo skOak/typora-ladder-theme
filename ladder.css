@@ -1,22 +1,6 @@
 @import "ladder.user.css";
 @import "ladder-light.user.css";
 
-/* FONTS */
-
-@font-face {
-  font-family: "LXGWWenKai-Regular";
-  font-display: block;
-  src: url("ladder/LXGWWenKai-Regular.ttf") format("truetype");
-  font-named-instance: "Regular";
-}
-
-@font-face {
-  font-family: "LXGWWenKai-Blod";
-  font-display: block;
-  src: url("ladder/LXGWWenKai-Bold.ttf") format("truetype");
-  font-named-instance: "Blod";
-}
-
 /* VARIABLES */
 
 :root {
@@ -126,7 +110,7 @@
   --rawblock-edit-panel-bd: var(--tw-prose-pre-bg);
   --item-hover-bg-color-inverted: var(--theme-700);
 
-  --monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+  --monospace: "LXGW WenKai Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 
   /* Custom */
@@ -252,8 +236,8 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: inherit;
-  font-family: "LXGWWenKai-Blod";
+  font-weight: bold;
+  font-family: "LXGW WenKai";
 }
 
 /*
@@ -412,7 +396,8 @@ textarea {
 
 html,
 body {
-  font-family: "LXGWWenKai-Regular";
+  font-weight: regular;
+  font-family: "LXGW WenKai";
 }
 
 /* on Windows/Linux, it is the part that is not titlebar or status bar. */
@@ -777,7 +762,8 @@ sup.md-footnote {
 }
 
 .md-reverse-footnote-area a {
-  font-family: "LXGWWenKai-Regular";
+  font-family: "LXGW WenKai";
+  font-weight: regular;
   text-decoration: none;
   color: var(--tw-primary);
   border-radius: 3px;
